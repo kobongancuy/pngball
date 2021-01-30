@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='This is a little demo of the new audio support for animations in krita.'><title>Krita Animation Audio - Unfortunately, audio for animation in krita is an unfinished, broken feature, which wasn&amp;#039;t removed only because it&amp;#039;s still useful for some (it works on some systems for some people, i guess).</title>
+
+<link rel='canonical' href='https://pngball.vercel.app/posts/krita-animation-audio_1/'>
+
+<link rel="stylesheet" href="/scss/style.min.css">
+<script data-cfasync="false">
+var _avp = _avp || [];
+(function() {
+var s = document.createElement('script');
+s.type = 'text/javascript'; s.async = true; s.src = window.location.protocol + '//adserver.adreactor.com/js/libcode3.js';
+var x = document.getElementsByTagName('script')[0];
+x.parentNode.insertBefore(s, x);
+})();
+</script>
+<meta property='og:title' content='Krita Animation Audio - Unfortunately, audio for animation in krita is an unfinished, broken feature, which wasn&amp;#039;t removed only because it&amp;#039;s still useful for some (it works on some systems for some people, i guess).'>
+<meta property='og:description' content='This is a little demo of the new audio support for animations in krita.'>
+<meta property='og:url' content='https://pngball.vercel.app/posts/krita-animation-audio_1/'>
+<meta property='og:site_name' content='Pngb Ball'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2020-01-30T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-01-30T00:00:00&#43;00:00'/><meta property='og:image' content='https://i.gyazo.com/0de7696cb8421698675cf10d2dcc14b3.png' />
+<meta name="twitter:title" content="Krita Animation Audio - Unfortunately, audio for animation in krita is an unfinished, broken feature, which wasn&amp;#039;t removed only because it&amp;#039;s still useful for some (it works on some systems for some people, i guess).">
+<meta name="twitter:description" content="This is a little demo of the new audio support for animations in krita."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://i.gyazo.com/0de7696cb8421698675cf10d2dcc14b3.png' />
+    </head>
+    <body class="article-page keep-sidebar">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended ">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu023fd73dc22fa202c6fa02a81329f35a_14311_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://pngball.vercel.app/">Pngb Ball</a></h1>
+        <h2 class="site-description">Discover recipes, home ideas, style inspiration and other ideas to try.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/posts/krita-animation-audio_1/">
+                
+                    <img src="https://i.gyazo.com/0de7696cb8421698675cf10d2dcc14b3.png" loading="lazy" alt="Featured image of post Krita Animation Audio - Unfortunately, audio for animation in krita is an unfinished, broken feature, which wasn&amp;#039;t removed only because it&amp;#039;s still useful for some (it works on some systems for some people, i guess)." />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/uncategorized/" >
+                Uncategorized
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/krita-animation-audio_1/">Krita Animation Audio - Unfortunately, audio for animation in krita is an unfinished, broken feature, which wasn&amp;#039;t removed only because it&amp;#039;s still useful for some (it works on some systems for some people, i guess).</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        This is a little demo of the new audio support for animations in krita.
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Jan 30, 2020</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    
+<section>
+    <aside>
+        <a href="https://art.ngfiles.com/images/634000/634995_tscoct_bouncing-orb-krita-animation-test.gif?f1535147772"><img alt="Bouncing Orb Krita Animation Test By Tscoct On Newgrounds It&#039;s a paint application that happens to do the default mode of krita is paint mode, so to see the animation tools switch to the animation. bouncing orb krita animation test by" src="https://art.ngfiles.com/images/634000/634995_tscoct_bouncing-orb-krita-animation-test.gif?f1535147772" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjsNDW3Qyd8n2AUXHOtLHZzOoZ6VQ1uzHAvw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>720x720 - Krita is not a dedicated animation application. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 720x720</li> 
+    <mark>Bouncing Orb Krita Animation Test By Tscoct On Newgrounds </mark> Krita plugin using the krita python script manager;
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://docs.krita.org/en/_images/Krita_ghostlady_2.png"><img alt="Filter Masks Krita Manual 4 4 0 Documentation It&#039;s a paint application that happens to do the default mode of krita is paint mode, so to see the animation tools switch to the animation. filter masks krita manual 4 4 0" src="https://docs.krita.org/en/_images/Krita_ghostlady_2.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhxmWtHlznvROUeRT3OPXHY4CwyeTZqKoFZQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>860x606 - Very simple function here, though i could see how people could miss it! </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 860x606</li> 
+    <mark>Filter Masks Krita Manual 4 4 0 Documentation </mark> Note that it&#039;s not officially released.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/142477900/original/bb8312157cf1b75b7d6a2f9035073c6ce128e5c8/simple-animated-gifs-made-in-krita.png"><img alt="Simple Animated Gifs Made In Krita By Luanastoica You can visit and download krita below. simple animated gifs made in krita by" src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/142477900/original/bb8312157cf1b75b7d6a2f9035073c6ce128e5c8/simple-animated-gifs-made-in-krita.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2SVKxKGwzlH8kOB9ZRrnZEWEuF95dXosGFw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1920x1080 - Krita plugin using the krita python script manager; </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1920x1080</li> 
+    <mark>Simple Animated Gifs Made In Krita By Luanastoica </mark> You can visit and download krita below.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/5tpILHmSgb8/maxresdefault.jpg"><img alt="No Sound In Krita Watch This Tutorial Tutsbykai Youtube This is a little demo of the new audio support for animations in krita. no sound in krita watch this tutorial tutsbykai" src="https://i.ytimg.com/vi/5tpILHmSgb8/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuoolmVkQoASvsx8-_D5zPlA4otCYiV679Zw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - You can add audio files to your animation to help sync lips or music. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>No Sound In Krita Watch This Tutorial Tutsbykai Youtube </mark> Read krita manual, remember about the animation workspace that you can set up at the top right of the krita window to see timeline and everything.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://opensource.com/sites/default/files/next.png"><img alt="How To Use Krita For Animation Opensource Com This is a little demo of the new audio support for animations in krita. how to use krita for animation" src="https://opensource.com/sites/default/files/next.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYxzCe3iV97xgdm8iPKYOAkGvoRW2_9zrHQw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>520x509 - Exports to a spritesheet from the animation timeline (using all visible layers) (the spritesheet&#039;s number of rows. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 520x509</li> 
+    <mark>How To Use Krita For Animation Opensource Com </mark> Read krita manual, remember about the animation workspace that you can set up at the top right of the krita window to see timeline and everything.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://preview.redd.it/n2oh7z84tww41.png?width=805&amp;format=png&amp;auto=webp&amp;s=9503aaace0c0d0d9312f1069f2bcf7dd8e285ad3"><img alt="Adding Audio Tracks To Krita Krita It works best using krita 4.2.x or later. reddit" src="https://preview.redd.it/n2oh7z84tww41.png?width=805&amp;format=png&amp;auto=webp&amp;s=9503aaace0c0d0d9312f1069f2bcf7dd8e285ad3" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3j-9S0o5jeKwj5ejaRGLSOLSscS-YazGrvA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>805x237 - It&#039;s a paint application that happens to do the default mode of krita is paint mode, so to see the animation tools switch to the animation. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 805x237</li> 
+    <mark>Adding Audio Tracks To Krita Krita </mark> This is a little demo of the new audio support for animations in krita.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="http://www.ubuntu-user.com/var/ezwebin_site/storage/images/magazine/archive/2016/31/krita-3.0-turns-into-a-2d-animation-tool/figure-1/52190-1-eng-GB/Figure-1_lightbox.png"><img alt="Krita 3 0 Turns Into A 2d Animation Tool 31 2016 Archive Magazine Home Ubuntu User How to download and animate on the free program krita! ubuntu user" src="http://www.ubuntu-user.com/var/ezwebin_site/storage/images/magazine/archive/2016/31/krita-3.0-turns-into-a-2d-animation-tool/figure-1/52190-1-eng-GB/Figure-1_lightbox.png" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/jNUI8NxaTZtufkDzB2sQXc4wtfOnFmTke7UjklDVEcxjt1eERa-CFqwWj924QDBJcbrKDTgT5jdYKzfDJYYOuhSKtAa5yAkq1hnc43GwqTh7yawW-ytlrxpL5u33LEbtxDcpmFYU3GYoqiF6PHVboRPeAVvxhCOFg6w9si0C6LRkq5dx1sZIBCGadBdnET8x7vXIYTYDPKHviNlFRPOGLl8iDeb8_K8Snzb6cS2qJZ1ICojiuvUnwzBt68FKfxfTdzgO';"></a>
+		
+		<p style="text-align: center;"><b>600x317 - This animation was done using krita painting program. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 600x317</li> 
+    <mark>Krita 3 0 Turns Into A 2d Animation Tool 31 2016 Archive Magazine Home Ubuntu User </mark> This is a little demo of the new audio support for animations in krita.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://docs.krita.org/en/_images/Timeline_insertkeys.png"><img alt="Timeline Docker Krita Manual 4 4 0 Documentation Made with krita 4.1.7 krita.org/en/homepage/ reference of music. timeline docker krita manual 4 4 0" src="https://docs.krita.org/en/_images/Timeline_insertkeys.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTNUfENR6uxUczUZiBeZX1RmFgQ-4-C7kt_Q&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>270x272 - It&#039;s a paint application that happens to do the default mode of krita is paint mode, so to see the animation tools switch to the animation. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 270x272</li> 
+    <mark>Timeline Docker Krita Manual 4 4 0 Documentation </mark> Note that it&#039;s not officially released.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://snapforum.s3.amazonaws.com/original/2X/e/e7b38e3c83abf42d0473a54394c6e756dca67792.png"><img alt="Could The Krita Snap Bundle Ffmpeg Snap Snapcraft Io Exports to a spritesheet from the animation timeline (using all visible layers) (the spritesheet&#039;s number of rows. could the krita snap bundle ffmpeg" src="https://snapforum.s3.amazonaws.com/original/2X/e/e7b38e3c83abf42d0473a54394c6e756dca67792.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvc0OHlZuvpX7hJxc4agyuuJWhKMSZrdKo-Q&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>571x418 - Krita is not a dedicated animation application. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 571x418</li> 
+    <mark>Could The Krita Snap Bundle Ffmpeg Snap Snapcraft Io </mark> #animation this is just an exercise on krita using an audio to time with the action, like a dance of #kingofpop #michaeljackson.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://cdn.cloudflare.steamstatic.com/steam/apps/280680/ss_98851a8720cf4d8abfba527b0931ef79e47c1a79.1920x1080.jpg?t=1588625499"><img alt="Krita On Steam In the left corner, there is a thing that has animation settings. krita" src="https://cdn.cloudflare.steamstatic.com/steam/apps/280680/ss_98851a8720cf4d8abfba527b0931ef79e47c1a79.1920x1080.jpg?t=1588625499" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFQJIkxuO3jDzQZ6895mJmttuHUdsEnRUypg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1078x599 - Note that it&#039;s not officially released. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1078x599</li> 
+    <mark>Krita On Steam </mark> It has multiple bugs and may not work on your system.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://krita.org/wp-content/uploads/2016/09/krita_animation_3_0_2.gif"><img alt="Krita 3 1 New Animation Features Moho Forum How to download and animate on the free program krita! lost marble" src="https://krita.org/wp-content/uploads/2016/09/krita_animation_3_0_2.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHGqgxlzbf8l-a9F4M8iQFCd97QWrYAzeRLg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1050x847 - Made with krita 4.1.7 krita.org/en/homepage/ reference of music. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1050x847</li> 
+    <mark>Krita 3 1 New Animation Features Moho Forum </mark> This animation was done using krita painting program.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/v7WFpbyvpT8/maxresdefault.jpg"><img alt="Let S Animate Krita Coloring Box Animation Better Audio Youtube Layer is not animated as long as there is. youtube" src="https://i.ytimg.com/vi/v7WFpbyvpT8/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='c480FxwYsd_rXM';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - Krita 3.1.2 is out now and they added audio support to this version which is a really great feature in my opinion. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>Let S Animate Krita Coloring Box Animation Better Audio Youtube </mark> Note that it&#039;s not officially released.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.reallinuxuser.com/wp-content/uploads/2018/09/Krita001.png"><img alt="Krita Is The Best Open Source Software For Digital Artists Real Linux User Layer is not animated as long as there is. krita is the best open source software" src="https://www.reallinuxuser.com/wp-content/uploads/2018/09/Krita001.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwVsqAP6wWYhOElhWo_Ve_5qimn96qmaNs_A&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>662x470 - Layer is not animated as long as there is. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 662x470</li> 
+    <mark>Krita Is The Best Open Source Software For Digital Artists Real Linux User </mark> Krita plugin using the krita python script manager;
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://img.youtube.com/vi/s08oHOjxo84/hqdefault.jpg"><img alt="Krita 3 1 2 Free Digital Painting App Released With Audio Support For Animations Fizzyflower 82 15 zedig brushes converted for krita fizzyflower 29 6 krita | photoshop style workspace 2020 moonsculpts 5 6 lighting tutorial. krita 3 1 2 free digital painting app" src="https://img.youtube.com/vi/s08oHOjxo84/hqdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSM5qD6TGfS8oGTOllr28AazEc2rUKnI6umA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>480x360 - You can add audio files to your animation to help sync lips or music. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 480x360</li> 
+    <mark>Krita 3 1 2 Free Digital Painting App Released With Audio Support For Animations </mark> #animation this is just an exercise on krita using an audio to time with the action, like a dance of #kingofpop #michaeljackson.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/4CAMjFV39-o/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&amp;rs=AOn4CLA9UF7PmNJMBCs_gJsSVB8MAtd30A"><img alt="Audio Support In Krita Preview Youtube Fizzyflower 82 15 zedig brushes converted for krita fizzyflower 29 6 krita | photoshop style workspace 2020 moonsculpts 5 6 lighting tutorial. audio support in krita preview youtube" src="https://i.ytimg.com/vi/4CAMjFV39-o/hqdefault.jpg?sqp=-oaymwEiCKgBEF5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&amp;rs=AOn4CLA9UF7PmNJMBCs_gJsSVB8MAtd30A" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe5dXBg1oEjnYP1oPWQlimxXbTiEBohm9kFw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>168x94 - Krita plugin using the krita python script manager; </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 168x94</li> 
+    <mark>Audio Support In Krita Preview Youtube </mark> This is a little demo of the new audio support for animations in krita.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://blenderartists.org/uploads/default/original/4X/f/f/e/ffe684a19068d0a9e2187094c803abfe1fdc26d5.jpeg"><img alt="The Counting Owl Animated Illustration With Krita Animations Blender Artists Community This animation was done using krita painting program. counting owl animated illustration" src="https://blenderartists.org/uploads/default/original/4X/f/f/e/ffe684a19068d0a9e2187094c803abfe1fdc26d5.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPHDvz9NQnmvJDd07kY44nXsrjVECxYSo7Xg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1920x1080 - You can visit and download krita below. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1920x1080</li> 
+    <mark>The Counting Owl Animated Illustration With Krita Animations Blender Artists Community </mark> How to download and animate on the free program krita!
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://blog.anim8.io/wp-content/uploads/2020/08/electrichearts_20190316_kiki_a_sm.png"><img alt="Reviewing And Using Krita A Free Art Program With Animation Capabilities Anim8 Blog This animation was done using krita painting program. reviewing and using krita a free art" src="https://blog.anim8.io/wp-content/uploads/2020/08/electrichearts_20190316_kiki_a_sm.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx3AKpScBYTar38dT5LtgSYP7Y2HJ67ufBNg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1200x596 - You can add audio files to your animation to help sync lips or music. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1200x596</li> 
+    <mark>Reviewing And Using Krita A Free Art Program With Animation Capabilities Anim8 Blog </mark> It works best using krita 4.2.x or later.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://krita-artists.org/uploads/default/original/2X/7/74d7d6be0cd1a584a245a908853fca3366e74e51.jpeg"><img alt="Feedback Wanted Help Us Improve Krita S Animation Tools Develop Krita Artists Very simple function here, though i could see how people could miss it! animation tools" src="https://krita-artists.org/uploads/default/original/2X/7/74d7d6be0cd1a584a245a908853fca3366e74e51.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXJrJGz6VI_ENql8CakTMX29P_pVQaYiabpA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>3840x2160 - It has multiple bugs and may not work on your system. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 3840x2160</li> 
+    <mark>Feedback Wanted Help Us Improve Krita S Animation Tools Develop Krita Artists </mark> You can add audio files to your animation to help sync lips or music.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://external-preview.redd.it/_k3gr15QTgXDYJKQLDpTaMYzNZaYxTkTHGCpsiStiBA.jpg?auto=webp&amp;s=3b98eed12ed7948db9ad04abba0ba6ccdb432137"><img alt="Adding Audio To Animation Krita #animation this is just an exercise on krita using an audio to time with the action, like a dance of #kingofpop #michaeljackson. adding audio to animation krita" src="https://external-preview.redd.it/_k3gr15QTgXDYJKQLDpTaMYzNZaYxTkTHGCpsiStiBA.jpg?auto=webp&amp;s=3b98eed12ed7948db9ad04abba0ba6ccdb432137" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3SVrbaaXU4u_Rppm_WRa8_TXTg6RgxhtLnw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1600x900 - #animation this is just an exercise on krita using an audio to time with the action, like a dance of #kingofpop #michaeljackson. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1600x900</li> 
+    <mark>Adding Audio To Animation Krita </mark> It works best using krita 4.2.x or later.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://cdn.neow.in/news/images/uploaded/2017/10/1507652296_krita_kiki.jpg"><img alt="Krita 4 1 7 Neowin And let me know if there&#039;s any other questions you&#039;d like answered. krita 4 1 7 neowin" src="https://cdn.neow.in/news/images/uploaded/2017/10/1507652296_krita_kiki.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSproR23QhWs_7ql3n5AWitFGUUpgAaWSQuCg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x761 - Note that it&#039;s not officially released. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x761</li> 
+    <mark>Krita 4 1 7 Neowin </mark> This is a little demo of the new audio support for animations in krita.
+</blockquote>
+    </aside>
+</section>
+
+
+	<section>
+ 
+</section>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+    
+</article>
+
+     
+        
+    
+
+    <footer class="site-footer">
+
+<script>
+if (!document.cookie || document.cookie.indexOf('AVPWCAP=') == -1) {
+_avp.push({ alias: '/', type: 'window', zid: 35, pid: 9319 });
+}
+</script>
+
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Pngb Ball
+    </section>
+    
+    <section class="powerby">
+        </section>
+		 
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4309929,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4309929&101" alt="counter stats" border="0"></a></noscript>
+
+	
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='In this code example, we make the css background image size fit the screen'><title>Html Background Image Fit Or Scale To Screen Size / In this code example, we make the css background image size fit the screen</title>
+
+<link rel='canonical' href='https://pngball.vercel.app/posts/html-background-image-fit-or-scale-to-screen-size/'>
+
+<link rel="stylesheet" href="/scss/style.min.css">
+<script data-cfasync="false">
+var _avp = _avp || [];
+(function() {
+var s = document.createElement('script');
+s.type = 'text/javascript'; s.async = true; s.src = window.location.protocol + '//adserver.adreactor.com/js/libcode3.js';
+var x = document.getElementsByTagName('script')[0];
+x.parentNode.insertBefore(s, x);
+})();
+</script>
+<meta property='og:title' content='Html Background Image Fit Or Scale To Screen Size / In this code example, we make the css background image size fit the screen'>
+<meta property='og:description' content='In this code example, we make the css background image size fit the screen'>
+<meta property='og:url' content='https://pngball.vercel.app/posts/html-background-image-fit-or-scale-to-screen-size/'>
+<meta property='og:site_name' content='Pngb Ball'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2021-01-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-01-21T00:00:00&#43;00:00'/><meta property='og:image' content='https://i2.wp.com/bootstrapcreative.com/wp-bc/wp-content/uploads/2017/06/full-width-carousel-blog-image.jpg?fit=1024%2C512&amp;ssl=1' />
+<meta name="twitter:title" content="Html Background Image Fit Or Scale To Screen Size / In this code example, we make the css background image size fit the screen">
+<meta name="twitter:description" content="In this code example, we make the css background image size fit the screen"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://i2.wp.com/bootstrapcreative.com/wp-bc/wp-content/uploads/2017/06/full-width-carousel-blog-image.jpg?fit=1024%2C512&amp;ssl=1' />
+    </head>
+    <body class="article-page keep-sidebar">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended ">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu023fd73dc22fa202c6fa02a81329f35a_14311_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://pngball.vercel.app/">Pngb Ball</a></h1>
+        <h2 class="site-description">Discover recipes, home ideas, style inspiration and other ideas to try.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/posts/html-background-image-fit-or-scale-to-screen-size/">
+                
+                    <img src="https://i2.wp.com/bootstrapcreative.com/wp-bc/wp-content/uploads/2017/06/full-width-carousel-blog-image.jpg?fit=1024%2C512&amp;amp;ssl=1" loading="lazy" alt="Featured image of post Html Background Image Fit Or Scale To Screen Size / In this code example, we make the css background image size fit the screen" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/uncategorized/" >
+                Uncategorized
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/html-background-image-fit-or-scale-to-screen-size/">Html Background Image Fit Or Scale To Screen Size / In this code example, we make the css background image size fit the screen</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        In this code example, we make the css background image size fit the screen
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Jan 21, 2021</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    
+<section>
+    <aside>
+        <a href="https://i0.wp.com/css-tricks.com/wp-content/uploads/2015/11/proportional-all.gif"><img alt="Scaled Proportional Content With Css And Javascript Css Tricks Well organized and easy to understand web building tutorials with lots of examples of how to use html, css, javascript, sql, php, python, bootstrap, java and xml. scaled proportional content with css" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2015/11/proportional-all.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTECkL6Osd8kHZ6vSHLFMh8wIXnyKTuKofxag&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>868x539 - So your page speed will be effected if you use it with resizing by the browser. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 868x539</li> 
+    <mark>Scaled Proportional Content With Css And Javascript Css Tricks </mark> Css makes it possible to resize the image so as to fit an html container.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://miro.medium.com/max/12032/1*g7fENKsVOTTfmFVu48I09Q.jpeg"><img alt="Creating A Responsive Header Image By Travis Horn Travis Horn The image is scaled to fit the entire container but, if that has a different aspect ratio, the. creating a responsive header image by" src="https://miro.medium.com/max/12032/1*g7fENKsVOTTfmFVu48I09Q.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWaQHQm3Hk7nxXsJzHeCQpre5NIRjsdjKVNg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>4000x2670 - Scale the image, while preserving its intrinsic aspect ratio (if any), to the largest size such that both its width and its height can fit inside the background positioning area. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 4000x2670</li> 
+    <mark>Creating A Responsive Header Image By Travis Horn Travis Horn </mark> Scale the image, while preserving its intrinsic aspect ratio (if any), to the largest size such that both its width and its height can fit inside the background positioning area.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.html5rocks.com/static/images/screenshots/auto-resizing-html5-games/image02.png"><img alt="Case Study Auto Resizing Html5 Games Html5 Rocks Well organized and easy to understand web building tutorials with lots of examples of how to use html, css, javascript, sql, php, python, bootstrap, java and xml. case study auto resizing html5 games" src="https://www.html5rocks.com/static/images/screenshots/auto-resizing-html5-games/image02.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLO7JMWLJ7rx4wXzQW-koD5tGAc7n89e_Orw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>592x283 - This makes sure that the background image is always completely contained in the background positioning area, however. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 592x283</li> 
+    <mark>Case Study Auto Resizing Html5 Games Html5 Rocks </mark> Well organized and easy to understand web building tutorials with lots of examples of how to use html, css, javascript, sql, php, python, bootstrap, java and xml.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://miro.medium.com/max/744/1*evWQU8VB8COP0zFrogkB6A.png"><img alt="How To Make Full Screen Background Image With Css By Prajwal Pradhan Medium Here in this tutorial i am showing how to fit our background image 100% scale, no matter people are using desktop, laptop, mobile or any other high resolution bigger screen or any other device. full screen background image with css" src="https://miro.medium.com/max/744/1*evWQU8VB8COP0zFrogkB6A.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQerLwx70Fkq5TK6guIn8ZJISft4NQmbRPuMQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>372x243 - First of all, your background image should be large enough to fit your largest target screen size, but should not be too heavy in weight. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 372x243</li> 
+    <mark>How To Make Full Screen Background Image With Css By Prajwal Pradhan Medium </mark> It instructs browsers to automatically scale the width and height of a responsive background image to be the same or bigger than the viewport.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.lifewire.com/thmb/Kx5Ob1o7R4s8yvblBqJC3hw18z8=/963x678/filters:no_upscale():max_bytes(150000):strip_icc()/css-background-100-example-3acfb4a7de454a699b82b30a8b056e6e.jpg"><img alt="Use Css3 To Stretch A Background Image To Fit A Web Page Retains image proportions (aspect ratio). use css3 to stretch a background image" src="https://www.lifewire.com/thmb/Kx5Ob1o7R4s8yvblBqJC3hw18z8=/963x678/filters:no_upscale():max_bytes(150000):strip_icc()/css-background-100-example-3acfb4a7de454a699b82b30a8b056e6e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUQ4Qc4YDDC7sAeTKQrJkuEoaP6fgrBptBvw&amp;usqp=CAU&amp;ec=45768318';"></a>
+		
+		<p style="text-align: center;"><b>963x678 - Cover tells the browser to make sure the image always covers the entire container, in this case html. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 963x678</li> 
+    <mark>Use Css3 To Stretch A Background Image To Fit A Web Page </mark> Means that the whole image will be visible but there may be some empty space on the sides or top and bottom if the image is not the same aspect as the canvas.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://miro.medium.com/max/2266/1*UN2-baKhachYv0x3HN0N2Q.png"><img alt="How To Make Full Screen Background Image With Css By Prajwal Pradhan Medium This property/value pair tells the browser to scale the background image proportionally for small screens, i used photoshop to proportionally resize the original background image down to 768x505px and i also ran it through smush.it to cut. full screen background image with css" src="https://miro.medium.com/max/2266/1*UN2-baKhachYv0x3HN0N2Q.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqxICQqEVUf4HRFrhvkq4KGhTfgbyjvw7ouA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1133x519 - Home » forums » html forum » background image photo to fit browser screen. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1133x519</li> 
+    <mark>How To Make Full Screen Background Image With Css By Prajwal Pradhan Medium </mark> Means that the whole image will be visible but there may be some empty space on the sides or top and bottom if the image is not the same aspect as the canvas.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.lifewire.com/thmb/ww8lT16T5GoiTeYfdEWag9cOqFw=/1920x971/filters:no_upscale():max_bytes(150000):strip_icc()/css-background-cover-fullscreen-121a93586a864318a7c0e9fbaf69f226.jpg"><img alt="Use Css3 To Stretch A Background Image To Fit A Web Page Home » forums » html forum » background image photo to fit browser screen. use css3 to stretch a background image" src="https://www.lifewire.com/thmb/ww8lT16T5GoiTeYfdEWag9cOqFw=/1920x971/filters:no_upscale():max_bytes(150000):strip_icc()/css-background-cover-fullscreen-121a93586a864318a7c0e9fbaf69f226.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoYPwnrD976ivec4mOcd_2cP8ICpprkP943w&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1920x971 - So it would be better to resize it with any image editor like photoshop to fit it with your screen. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1920x971</li> 
+    <mark>Use Css3 To Stretch A Background Image To Fit A Web Page </mark> Means that the whole image will be visible but there may be some empty space on the sides or top and bottom if the image is not the same aspect as the canvas.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.lifewire.com/thmb/PyVIMNArWFpOY8cdfG5GezE9BU0=/912x684/smart/filters:no_upscale()/html-background-example-15e4a8f1a6724b3ca187b2bcc19650e8.jpg"><img alt="Use Css3 To Stretch A Background Image To Fit A Web Page That&#039;s where the magic happens. use css3 to stretch a background image" src="https://www.lifewire.com/thmb/PyVIMNArWFpOY8cdfG5GezE9BU0=/912x684/smart/filters:no_upscale()/html-background-example-15e4a8f1a6724b3ca187b2bcc19650e8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZpZNqzphO6ssZ5L3lMJ2vfgCmzGbw_VoCdw&amp;usqp=CAU&amp;ec=45768318';"></a>
+		
+		<p style="text-align: center;"><b>912x684 - Cover tells the browser to make sure the image always covers the entire container, in this case html. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 912x684</li> 
+    <mark>Use Css3 To Stretch A Background Image To Fit A Web Page </mark> Retains image proportions (aspect ratio).
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.codeproject.com/KB/HTML/762201/css4.PNG"><img alt="Adjusting Your Websites To Fit All Types Of Resolution Using Html And Css Codeproject If you care about having all of the image appear in the background, then you will want to make sure the image is relatively close in aspect ratio compared to the screen. adjusting your websites to fit all" src="https://www.codeproject.com/KB/HTML/762201/css4.PNG" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSamyueU5uewNINdtIb5hnuaB21eJjnoVkQeg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>434x652 - Retains image proportions (aspect ratio). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 434x652</li> 
+    <mark>Adjusting Your Websites To Fit All Types Of Resolution Using Html And Css Codeproject </mark> So your page speed will be effected if you use it with resizing by the browser.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.w3schools.com/css/img_chania.jpg"><img alt="Responsive Web Design Images Css makes it possible to resize the image so as to fit an html container. responsive web design images" src="https://www.w3schools.com/css/img_chania.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSug6lCz2tqL4EZSf3QVXLFaEOXQpauhy1yeA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>460x345 - Home » forums » html forum » background image photo to fit browser screen. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 460x345</li> 
+    <mark>Responsive Web Design Images </mark> Cover tells the browser to make sure the image always covers the entire container, in this case html.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.litmus.com/wp-content/uploads/2020/06/bg-images-layering.jpg"><img alt="The Ultimate Guide To Background Images In Email Litmus Means that the image is scaled so that all the canvas pixels will be covered by the image. the ultimate guide to background images" src="https://www.litmus.com/wp-content/uploads/2020/06/bg-images-layering.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa00nZbavm_4QYOebMxWrSjNJ4afwxzF7jhg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1920x1080 - Cover not the answer you&#039;re looking for? </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1920x1080</li> 
+    <mark>The Ultimate Guide To Background Images In Email Litmus </mark> Secondly, remember that a too bright image might disturb the correct balance of the.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://miro.medium.com/max/786/1*usfFIVRgcY1eI9_S32g6Uw.png"><img alt="How To Make Full Screen Background Image With Css By Prajwal Pradhan Medium A large image means a large file size. full screen background image with css" src="https://miro.medium.com/max/786/1*usfFIVRgcY1eI9_S32g6Uw.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj7VlkhFsMOq0OjaDWui_OGrOdGV-SOJ05Zw&amp;usqp=CAU&amp;ec=45768318';"></a>
+		
+		<p style="text-align: center;"><b>393x293 - Here in this tutorial i am showing how to fit our background image 100% scale, no matter people are using desktop, laptop, mobile or any other high resolution bigger screen or any other device. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 393x293</li> 
+    <mark>How To Make Full Screen Background Image With Css By Prajwal Pradhan Medium </mark> How to set a full size background image in html.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://webdev.imgix.net/responsive-web-design-basics/devtools-small.png"><img alt="Responsive Web Design Basics So it would be better to resize it with any image editor like photoshop to fit it with your screen. responsive web design basics" src="https://webdev.imgix.net/responsive-web-design-basics/devtools-small.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdgS3dQ7YexNrXxMh8j97VZg07CzE7x-KIdA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1200x782 - First of all, your background image should be large enough to fit your largest target screen size, but should not be too heavy in weight. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1200x782</li> 
+    <mark>Responsive Web Design Basics </mark> Get code examples like image fit to screen html instantly right from your google search results with the grepper chrome extension.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://support.hp.com/doc-images/450/c06319109.gif"><img alt="Hp Products Changing Display Settings Background Image Icons And Screen Saver Windows 10 7 Hp Customer Support Cover not the answer you&#039;re looking for? hp products changing display settings" src="https://support.hp.com/doc-images/450/c06319109.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdSz-m0ebPiVSdv5IoQN5NJj0wqI02XNRyQQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>380x287 - Means that the image is scaled so that all the canvas pixels will be covered by the image. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 380x287</li> 
+    <mark>Hp Products Changing Display Settings Background Image Icons And Screen Saver Windows 10 7 Hp Customer Support </mark> This property/value pair tells the browser to scale the background image proportionally for small screens, i used photoshop to proportionally resize the original background image down to 768x505px and i also ran it through smush.it to cut.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://content.instructables.com/ORIG/F0T/X9YA/HKPX4BQ9/F0TX9YAHKPX4BQ9.jpg?fit=bounds&amp;frame=1&amp;auto=webp&amp;frame=1&amp;height=300"><img alt="Make Your Html Website Suitable For Mobile Devices 8 Steps Instructables Cover not the answer you&#039;re looking for? make your html website suitable for" src="https://content.instructables.com/ORIG/F0T/X9YA/HKPX4BQ9/F0TX9YAHKPX4BQ9.jpg?fit=bounds&amp;frame=1&amp;auto=webp&amp;frame=1&amp;height=300" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSjxwh8q443OMiMhyBOTZJs5EIBanESC-qkw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>668x300 - Css makes it possible to resize the image so as to fit an html container. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 668x300</li> 
+    <mark>Make Your Html Website Suitable For Mobile Devices 8 Steps Instructables </mark> Retains image proportions (aspect ratio).
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://inspectapedia.com/graphics/Explorer_Page_Setup.jpg"><img alt="How To Print A Web Page How To Fit Web Pages Scaled To Fit Your Printer Paper Size Since providing css on body will cover whole body of html document that is it will cover whole window screen. print a web page how to fit web pages" src="https://inspectapedia.com/graphics/Explorer_Page_Setup.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIkSEUxfDwIWk9p0I8PaaCK9fzIQe0fga_Sg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>461x265 - Find some ways of stretching the image to fit the div container. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 461x265</li> 
+    <mark>How To Print A Web Page How To Fit Web Pages Scaled To Fit Your Printer Paper Size </mark> Home » forums » html forum » background image photo to fit browser screen.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.stack.imgur.com/1Bf6d.png"><img alt="Css Tag Object Fit Cover Does Not Crop Clip Videos In Chrome Stack Overflow Here in this tutorial i am showing how to fit our background image 100% scale, no matter people are using desktop, laptop, mobile or any other high resolution bigger screen or any other device. css tag object fit cover does not" src="https://i.stack.imgur.com/1Bf6d.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2NC8Vil4JHpxKolDU-1BsDrxii7tv5rNWxg&amp;usqp=CAU&amp;ec=45768318';"></a>
+		
+		<p style="text-align: center;"><b>503x259 - This scales image so it fits the container. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 503x259</li> 
+    <mark>Css Tag Object Fit Cover Does Not Crop Clip Videos In Chrome Stack Overflow </mark> That&#039;s where the magic happens.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://media.geeksforgeeks.org/wp-content/uploads/Screen-Shot-2017-11-13-at-10.23.39-AM.png"><img alt="Html Responsive Full Page Image Using Css Geeksforgeeks It instructs browsers to automatically scale the width and height of a responsive background image to be the same or bigger than the viewport. html responsive full page image using" src="https://media.geeksforgeeks.org/wp-content/uploads/Screen-Shot-2017-11-13-at-10.23.39-AM.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrT-Syy_fUAKB0rHnYVASjq1lRU6QbGp4lTw&amp;usqp=CAU&amp;ec=45768318';"></a>
+		
+		<p style="text-align: center;"><b>1439x838 - If you care about having all of the image appear in the background, then you will want to make sure the image is relatively close in aspect ratio compared to the screen. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1439x838</li> 
+    <mark>Html Responsive Full Page Image Using Css Geeksforgeeks </mark> If you care about having all of the image appear in the background, then you will want to make sure the image is relatively close in aspect ratio compared to the screen.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://webdev.imgix.net/one-line-layouts/hero.png"><img alt="Ten Modern Layouts In One Line Of Css A large image means a large file size. ten modern layouts in one line of css" src="https://webdev.imgix.net/one-line-layouts/hero.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz6LPdCwAEkAbWZR5JkIo8MAiCdfJqMOz8LA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1825x1200 - That&#039;s where the magic happens. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1825x1200</li> 
+    <mark>Ten Modern Layouts In One Line Of Css </mark> Here in this tutorial i am showing how to fit our background image 100% scale, no matter people are using desktop, laptop, mobile or any other high resolution bigger screen or any other device.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.lullabot.com/sites/default/files/styles/max_1300x1300/public/assets/2017-02/vw.png?itok=volWyS0-"><img alt="The Unexpected Power Of Viewport Units In Css Lullabot That&#039;s where the magic happens. of viewport units in css" src="https://www.lullabot.com/sites/default/files/styles/max_1300x1300/public/assets/2017-02/vw.png?itok=volWyS0-" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1ro2izt5DjqoyV_bb9jg1Ay9fk1CCdJfShQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1300x806 - Contain to scale the image, while preserving its intrinsic aspect ratio (if any), to the largest size such that both its width and its height can fit inside the background positioning area. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1300x806</li> 
+    <mark>The Unexpected Power Of Viewport Units In Css Lullabot </mark> Cover tells the browser to make sure the image always covers the entire container, in this case html.
+</blockquote>
+    </aside>
+</section>
+
+
+	<section>
+ 
+</section>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+    
+</article>
+
+     
+        
+    
+
+    <footer class="site-footer">
+
+<script>
+if (!document.cookie || document.cookie.indexOf('AVPWCAP=') == -1) {
+_avp.push({ alias: '/', type: 'window', zid: 35, pid: 9319 });
+}
+</script>
+
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Pngb Ball
+    </section>
+    
+    <section class="powerby">
+        </section>
+		 
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4309929,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4309929&101" alt="counter stats" border="0"></a></noscript>
+
+	
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

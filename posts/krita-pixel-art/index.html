@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Krita is pretty easy to use, it&amp;#039;s open source… but it&amp;#039;s also flexible.'><title>Krita Pixel Art : Btw it happens with any brush.</title>
+
+<link rel='canonical' href='https://pngball.vercel.app/posts/krita-pixel-art/'>
+
+<link rel="stylesheet" href="/scss/style.min.css">
+<script data-cfasync="false">
+var _avp = _avp || [];
+(function() {
+var s = document.createElement('script');
+s.type = 'text/javascript'; s.async = true; s.src = window.location.protocol + '//adserver.adreactor.com/js/libcode3.js';
+var x = document.getElementsByTagName('script')[0];
+x.parentNode.insertBefore(s, x);
+})();
+</script>
+<meta property='og:title' content='Krita Pixel Art : Btw it happens with any brush.'>
+<meta property='og:description' content='Krita is pretty easy to use, it&amp;#039;s open source… but it&amp;#039;s also flexible.'>
+<meta property='og:url' content='https://pngball.vercel.app/posts/krita-pixel-art/'>
+<meta property='og:site_name' content='Pngb Ball'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2020-02-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-02-20T00:00:00&#43;00:00'/><meta property='og:image' content='https://docs.krita.org/fr/_images/krita-colorize-mask-02.png' />
+<meta name="twitter:title" content="Krita Pixel Art : Btw it happens with any brush.">
+<meta name="twitter:description" content="Krita is pretty easy to use, it&amp;#039;s open source… but it&amp;#039;s also flexible."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://docs.krita.org/fr/_images/krita-colorize-mask-02.png' />
+    </head>
+    <body class="article-page keep-sidebar">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended ">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu023fd73dc22fa202c6fa02a81329f35a_14311_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://pngball.vercel.app/">Pngb Ball</a></h1>
+        <h2 class="site-description">Discover recipes, home ideas, style inspiration and other ideas to try.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/posts/krita-pixel-art/">
+                
+                    <img src="https://docs.krita.org/fr/_images/krita-colorize-mask-02.png" loading="lazy" alt="Featured image of post Krita Pixel Art : Btw it happens with any brush." />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/uncategorized/" >
+                Uncategorized
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/krita-pixel-art/">Krita Pixel Art : Btw it happens with any brush.</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        Krita is pretty easy to use, it&amp;#039;s open source… but it&amp;#039;s also flexible.
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Feb 20, 2020</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    
+<section>
+    <aside>
+        <a href="https://hackster.imgix.net/uploads/attachments/826729/pixelart_hack_LSq6mBNum8.jpg?auto=compress&amp;w=900&amp;h=675&amp;fit=min&amp;fm=jpg"><img alt="Pixel Art On Oled Display Hackster Io Thank god krita can make pixel art. pixel art on oled display hackster io" src="https://hackster.imgix.net/uploads/attachments/826729/pixelart_hack_LSq6mBNum8.jpg?auto=compress&amp;w=900&amp;h=675&amp;fit=min&amp;fm=jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMsmW_zlGSslpru9q0B6xalCP2_hVclzzoaw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>900x675 - Krita is a free app for digital painting, offering a full solution for creating digital art from scratch for all artists. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 900x675</li> 
+    <mark>Pixel Art On Oled Display Hackster Io </mark> 7 tips to master hd index painting with krita video.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://krita.org/wp-content/uploads/2013/10/krita_squirrel_by_pixelspriteart-d63juwe.png"><img alt="Meet Pixel Sprite Krita It&#039;s modern and seems to have a dark theme (night owl here). meet pixel sprite krita" src="https://krita.org/wp-content/uploads/2013/10/krita_squirrel_by_pixelspriteart-d63juwe.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTFaoYUeOE3UtCi3MnSjkajOMrOF8FLa52Ig&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1024x768 - Последние твиты от krita painting app (@krita_painting). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1024x768</li> 
+    <mark>Meet Pixel Sprite Krita </mark> Isometric pixel art practice made with krita 4.1.7.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://cdn.homesthetics.net/wp-content/uploads/2019/08/Free-Krita-Brushes.jpg"><img alt="14 Amazing Free Krita Brushes And Brush Packs For Digital Art In 2021 A collection of free krita brushes, by gdquest, for concept artists, illustrators and game artists. free krita brushes and brush packs" src="https://cdn.homesthetics.net/wp-content/uploads/2019/08/Free-Krita-Brushes.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK4P1zl3xaDtar5bCJm_jILEB74tVeMaSlMQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1532x689 - Drawing pixel art in krita. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1532x689</li> 
+    <mark>14 Amazing Free Krita Brushes And Brush Packs For Digital Art In 2021 </mark> I know there are other programs like gimp and stuff people recommend, however i really like the look of krita;
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://pinnguaq.com/app/uploads/2020/03/kritacomics01.png"><img alt="Krita For Comics Ep 1 Krita Basics Pinnguaq I know there are other programs like gimp and stuff people recommend, however i really like the look of krita; comics ep 1 krita basics pinnguaq" src="https://pinnguaq.com/app/uploads/2020/03/kritacomics01.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKs5oBgDWRxKO557_sFPzLCh0AQ34jhPcyag&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>700x700 - Krita is a free app for digital painting, offering a full solution for creating digital art from scratch for all artists. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 700x700</li> 
+    <mark>Krita For Comics Ep 1 Krita Basics Pinnguaq </mark> How to set up krita for pixel art.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://docs.krita.org/fr/_images/krita-colorize-mask-02.png"><img alt="Common Workflows Documentation Krita Manual 4 4 0 Isometric pixel art practice made with krita 4.1.7. common workflows documentation krita" src="https://docs.krita.org/fr/_images/krita-colorize-mask-02.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7ZFbHEE_yKupyQ2M_eJ_0MNa-c9dyiIgWgw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1674x1440 - But my laptop always lags when i finish drawing a line in krita, is there a reason or is it just my laptop? </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1674x1440</li> 
+    <mark>Common Workflows Documentation Krita Manual 4 4 0 </mark> Krita is a powerful digital painting application, made for illustrators, game artists, concept artists, animators, comic book artists and everyone who wants to draw and paint.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://cdn-wordpress.buildbox.com/wp-content/uploads/2018/11/Krita.png"><img alt="Top 12 Pixel Art Maker Tools For Game Design Buildbox Game Maker Video Game Software How to set up krita for pixel art. top 12 pixel art maker tools for game" src="https://cdn-wordpress.buildbox.com/wp-content/uploads/2018/11/Krita.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxutY21K4Z_bqQ42NbWb_MbRDPvNIWHDIIOA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1266x631 - Krita is pretty easy to use, it&#039;s open source… but it&#039;s also flexible. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1266x631</li> 
+    <mark>Top 12 Pixel Art Maker Tools For Game Design Buildbox Game Maker Video Game Software </mark> Because it&#039;s a digital painting software, it offers a lot of specific tools and filters to tweak.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://docs.krita.org/en/_images/Index-color-filter1.png"><img alt="Common Workflows Krita Manual 4 4 0 Documentation ✓ curso grátis pixel art. common workflows krita manual 4 4 0" src="https://docs.krita.org/en/_images/Index-color-filter1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTblUpFIskd-hgQKXHsIyAYPyg33KRkcEp1Q&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>520x786 - But my laptop always lags when i finish drawing a line in krita, is there a reason or is it just my laptop? </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 520x786</li> 
+    <mark>Common Workflows Krita Manual 4 4 0 Documentation </mark> Thank god krita can make pixel art.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a73e59c6-c41c-4dac-a2d3-890521c1da75/dduwv9y-77c846a9-167e-4dc0-a972-ae7d20be4cdf.png/v1/fill/w_1280,h_739,q_80,strp/configure_krita_for_pixel_art_sta_sh_tutorial______by_inuzai_dduwv9y-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03MzkiLCJwYXRoIjoiXC9mXC9hNzNlNTljNi1jNDFjLTRkYWMtYTJkMy04OTA1MjFjMWRhNzVcL2RkdXd2OXktNzdjODQ2YTktMTY3ZS00ZGMwLWE5NzItYWU3ZDIwYmU0Y2RmLnBuZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.XNiDWGUsesoao8XEmExX3V1j8gJBtnle2UYqvqeRNs4"><img alt="Configure Krita For Pixel Art Sta Sh Tutorial By Inuzai On Deviantart Quer saber como fazer pixel art no krita passo a passo? configure krita for pixel art sta sh" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a73e59c6-c41c-4dac-a2d3-890521c1da75/dduwv9y-77c846a9-167e-4dc0-a972-ae7d20be4cdf.png/v1/fill/w_1280,h_739,q_80,strp/configure_krita_for_pixel_art_sta_sh_tutorial______by_inuzai_dduwv9y-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03MzkiLCJwYXRoIjoiXC9mXC9hNzNlNTljNi1jNDFjLTRkYWMtYTJkMy04OTA1MjFjMWRhNzVcL2RkdXd2OXktNzdjODQ2YTktMTY3ZS00ZGMwLWE5NzItYWU3ZDIwYmU0Y2RmLnBuZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.XNiDWGUsesoao8XEmExX3V1j8gJBtnle2UYqvqeRNs4" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHN__ORDyzhmZob2slvlf51ypcLM46aLFgpQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x739 - So many brush settings that i don&#039;t know what they do! thanks to pixel sprite and…if you want to know more about him don&#039;t forget to visit his deviantart! </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x739</li> 
+    <mark>Configure Krita For Pixel Art Sta Sh Tutorial By Inuzai On Deviantart </mark> Search by topic, author or medium to find the perfect article.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://docs.krita.org/en/_images/Krita_filling_lineart_color_to_alpha.png"><img alt="Flat Coloring Krita Manual 4 4 0 Documentation Drawing pixel art in krita. flat coloring krita manual 4 4 0" src="https://docs.krita.org/en/_images/Krita_filling_lineart_color_to_alpha.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaSjwLMFyzL3z7oExfi7NKeHBDYPvBpMQYdA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1104x820 - Krita is a free app for digital painting, offering a full solution for creating digital art from scratch for all artists. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1104x820</li> 
+    <mark>Flat Coloring Krita Manual 4 4 0 Documentation </mark> Browse our database of hundreds of pixel art tutorials on all different subjects, filter and the biggest collection of pixel art tutorials on the net!
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/rLdA4Amea7Y/maxresdefault.jpg"><img alt="The 11 Best Pixel Art Tools To Create Pixel Perfect Artwork How to set up krita for pixel art. the 11 best pixel art tools to create" src="https://i.ytimg.com/vi/rLdA4Amea7Y/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGye-FoFm2SRVOH4-Lz4p1zMTEWmudrDBElA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - Последние твиты от krita painting app (@krita_painting). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>The 11 Best Pixel Art Tools To Create Pixel Perfect Artwork </mark> Thank god krita can make pixel art.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://alomora.art/blog/book-pixel-art-drawn-with-krita/images/a64-book-pixel-art.png"><img alt="Book Pixel Art Drawn With Krita fr faire du pixel art avec krita. book pixel art drawn with krita" src="https://alomora.art/blog/book-pixel-art-drawn-with-krita/images/a64-book-pixel-art.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDmI5GVZCrjMjXSveS8CyP9m_9RQHXqJWJ2A&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>800x450 - Thank god krita can make pixel art. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 800x450</li> 
+    <mark>Book Pixel Art Drawn With Krita </mark> fr faire du pixel art avec krita.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://img.fixthephoto.com/blog/images/gallery/news_preview_mob_image__preview_4916.png"><img alt="11 Best Pixel Art Software In 2021 Thus it&#039;s an interesting choice to draw pixel art. 11 best pixel art software in 2021" src="https://img.fixthephoto.com/blog/images/gallery/news_preview_mob_image__preview_4916.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnZuI7kVdUD22FDCzJ_6fAuIk0lppiqLfaew&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1024x1024 - Free krita brushes for game artists. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1024x1024</li> 
+    <mark>11 Best Pixel Art Software In 2021 </mark> Quer saber como fazer pixel art no krita passo a passo?
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/K_hdvPlhz_g/maxresdefault.jpg"><img alt="Krita 4 Pixel Art Goblin Youtube Thus it&#039;s an interesting choice to draw pixel art. krita 4 pixel art goblin" src="https://i.ytimg.com/vi/K_hdvPlhz_g/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMnklYe9z-zuf9w921xRMySj4n4EOqMDbyqg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - ✓ curso grátis pixel art. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>Krita 4 Pixel Art Goblin Youtube </mark> 7 tips to master hd index painting with krita video.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://preview.redd.it/5k3bw2b3jo841.png?width=484&amp;format=png&amp;auto=webp&amp;s=d2fd46da6b78c66b2610f654a7cf7b5961a3d5f9"><img alt="Unable To Create A Perfect Pixel Art Circle Krita What program to use for pixel art? perfect pixel art circle krita" src="https://preview.redd.it/5k3bw2b3jo841.png?width=484&amp;format=png&amp;auto=webp&amp;s=d2fd46da6b78c66b2610f654a7cf7b5961a3d5f9" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwTss5DKXLj11_h6x5OjBfnpAU0yqM0_JP4Q&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>484x492 - Krita is a powerful digital painting application, made for illustrators, game artists, concept artists, animators, comic book artists and everyone who wants to draw and paint. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 484x492</li> 
+    <mark>Unable To Create A Perfect Pixel Art Circle Krita </mark> So many brush settings that i don&#039;t know what they do! thanks to pixel sprite and…if you want to know more about him don&#039;t forget to visit his deviantart!
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.pinimg.com/originals/b7/20/5a/b7205a34e8dee4e9ed680505ccf91222.jpg"><img alt="A Geometric Expressionist Meditation Created With Krita And G Mic Meditation Geometric Pixel Art Quer saber como fazer pixel art no krita passo a passo? pinterest" src="https://i.pinimg.com/originals/b7/20/5a/b7205a34e8dee4e9ed680505ccf91222.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR42dzFCw38JtwdUEDa-oVcThfyQyE4sca01w&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>894x894 - I know there are other programs like gimp and stuff people recommend, however i really like the look of krita; </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 894x894</li> 
+    <mark>A Geometric Expressionist Meditation Created With Krita And G Mic Meditation Geometric Pixel Art </mark> It&#039;s modern and seems to have a dark theme (night owl here).
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://fixthephoto.com/blog/UserFiles/Image/222/22/19/21/1/photoshop-pixel-art-software-interface.png"><img alt="11 Best Pixel Art Software In 2021 Free krita brushes for game artists. 11 best pixel art software in 2021" src="https://fixthephoto.com/blog/UserFiles/Image/222/22/19/21/1/photoshop-pixel-art-software-interface.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYir2V_2RbRqCyxl3wrJIUj3EhqxaoBMaosg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>960x640 - It&#039;s modern and seems to have a dark theme (night owl here). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 960x640</li> 
+    <mark>11 Best Pixel Art Software In 2021 </mark> However, for the more amateur users, this free brush set is going to be.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/aaRzNTCanIQ/maxresdefault.jpg"><img alt="How To Set Up Krita For Pixel Art Youtube Então esse vídeo é pra você! how to set up krita for pixel art" src="https://i.ytimg.com/vi/aaRzNTCanIQ/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDe_pZP2mrynvoLz2_9qHKJzo3EExHaBbg8w&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - Krita is a powerful digital painting application, made for illustrators, game artists, concept artists, animators, comic book artists and everyone who wants to draw and paint. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>How To Set Up Krita For Pixel Art Youtube </mark> How to set up krita for pixel art.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://improveyourdrawings.com/wp-content/uploads/2020/05/Krita.jpg"><img alt="All You Need To Know About Krita Improveyourdrawings Com Browse our database of hundreds of pixel art tutorials on all different subjects, filter and the biggest collection of pixel art tutorials on the net! all you need to know about krita" src="https://improveyourdrawings.com/wp-content/uploads/2020/05/Krita.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVI9sbnWcmHodri4CkhP-PUQcd2NsGmAsHBA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>800x450 - Layers instant pixel art with photoshop and krita (indexed color) pixel art pėdutės basic lighting &amp; colour theory. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 800x450</li> 
+    <mark>All You Need To Know About Krita Improveyourdrawings Com </mark> So many brush settings that i don&#039;t know what they do! thanks to pixel sprite and…if you want to know more about him don&#039;t forget to visit his deviantart!
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://krita-artists.org/uploads/default/original/2X/d/d93b0e8c94c8f2625c27e91baa233f68aa139a11.jpeg"><img alt="Can I How Do I Make This Pixel Brush In Krita Tutorials Resources Krita Artists Gdquest krita brush set is the &#039;freemium alternative&#039; to their more exclusive game art brush pack, which does cost a hefty sum. how do i make this pixel brush in krita" src="https://krita-artists.org/uploads/default/original/2X/d/d93b0e8c94c8f2625c27e91baa233f68aa139a11.jpeg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMTzApmGVbIfpgOJ3cRzROoxHvX62JBUvkCw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1920x1080 - It&#039;s modern and seems to have a dark theme (night owl here). </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1920x1080</li> 
+    <mark>Can I How Do I Make This Pixel Brush In Krita Tutorials Resources Krita Artists </mark> Btw it happens with any brush.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://art.ngfiles.com/images/640000/640428_ten109_pixel-art.png?f1536606453"><img alt="Pixel Art By Ten109 On Newgrounds ✓ curso grátis pixel art. newgrounds com" src="https://art.ngfiles.com/images/640000/640428_ten109_pixel-art.png?f1536606453" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHIs5UrJaRxcw3kglW7f3IUpO03rTJRbc-Ew&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1584x1200 - Gdquest krita brush set is the &#039;freemium alternative&#039; to their more exclusive game art brush pack, which does cost a hefty sum. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1584x1200</li> 
+    <mark>Pixel Art By Ten109 On Newgrounds </mark> Search by topic, author or medium to find the perfect article.
+</blockquote>
+    </aside>
+</section>
+
+
+	<section>
+ 
+</section>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+    
+</article>
+
+     
+        
+    
+
+    <footer class="site-footer">
+
+<script>
+if (!document.cookie || document.cookie.indexOf('AVPWCAP=') == -1) {
+_avp.push({ alias: '/', type: 'window', zid: 35, pid: 9319 });
+}
+</script>
+
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Pngb Ball
+    </section>
+    
+    <section class="powerby">
+        </section>
+		 
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4309929,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4309929&101" alt="counter stats" border="0"></a></noscript>
+
+	
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='I know that i have a long way to go and that it&amp;#039;s a lot of work, but i&amp;#039;m more.'><title>Krita Tutorial Animation : Big thanks to claus for converting all these to a wiki format as well.</title>
+
+<link rel='canonical' href='https://pngball.vercel.app/posts/krita-tutorial-animation/'>
+
+<link rel="stylesheet" href="/scss/style.min.css">
+<script data-cfasync="false">
+var _avp = _avp || [];
+(function() {
+var s = document.createElement('script');
+s.type = 'text/javascript'; s.async = true; s.src = window.location.protocol + '//adserver.adreactor.com/js/libcode3.js';
+var x = document.getElementsByTagName('script')[0];
+x.parentNode.insertBefore(s, x);
+})();
+</script>
+<meta property='og:title' content='Krita Tutorial Animation : Big thanks to claus for converting all these to a wiki format as well.'>
+<meta property='og:description' content='I know that i have a long way to go and that it&amp;#039;s a lot of work, but i&amp;#039;m more.'>
+<meta property='og:url' content='https://pngball.vercel.app/posts/krita-tutorial-animation/'>
+<meta property='og:site_name' content='Pngb Ball'>
+<meta property='og:type' content='article'><meta property='article:section' content='Posts' /><meta property='article:published_time' content='2020-12-27T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2020-12-27T00:00:00&#43;00:00'/><meta property='og:image' content='https://krita.org/wp-content/uploads/2016/03/gradientmapfilter.png' />
+<meta name="twitter:title" content="Krita Tutorial Animation : Big thanks to claus for converting all these to a wiki format as well.">
+<meta name="twitter:description" content="I know that i have a long way to go and that it&amp;#039;s a lot of work, but i&amp;#039;m more."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://krita.org/wp-content/uploads/2016/03/gradientmapfilter.png' />
+    </head>
+    <body class="article-page keep-sidebar">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended ">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu023fd73dc22fa202c6fa02a81329f35a_14311_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://pngball.vercel.app/">Pngb Ball</a></h1>
+        <h2 class="site-description">Discover recipes, home ideas, style inspiration and other ideas to try.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>Dark Mode</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/posts/krita-tutorial-animation/">
+                
+                    <img src="https://krita.org/wp-content/uploads/2016/03/gradientmapfilter.png" loading="lazy" alt="Featured image of post Krita Tutorial Animation : Big thanks to claus for converting all these to a wiki format as well." />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/uncategorized/" >
+                Uncategorized
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/posts/krita-tutorial-animation/">Krita Tutorial Animation : Big thanks to claus for converting all these to a wiki format as well.</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        I know that i have a long way to go and that it&amp;#039;s a lot of work, but i&amp;#039;m more.
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Dec 27, 2020</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    
+<section>
+    <aside>
+        <a href="http://www.jessejayjones.com/wp-content/uploads/2018/03/ASK_v01-1024x683.png"><img alt="How To Animate In Krita Tutorial For Beginners Jesse J Jones In this krita animation tutorial for beginners, we will learn how to download krita, how to draw in it, how to animate. jesse j jones" src="http://www.jessejayjones.com/wp-content/uploads/2018/03/ASK_v01-1024x683.png" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/TTWVQk_CssXXYVFTv55BtTAHHB7gWJ11tBQWNnuenNtVPhKvqbxbc7mqrUnn4LORGdF3I8958ZuS3sLbIE2tjsNEr0FWLxs2YxXrXhc_FNae3QIyLDrW9YN2hgYhntvoTKqqqQ';"></a>
+		
+		<p style="text-align: center;"><b>1024x683 - In this krita animation tutorial for beginners, we will learn how to download krita, how to draw in it, how to animate. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1024x683</li> 
+    <mark>How To Animate In Krita Tutorial For Beginners Jesse J Jones </mark> How to paint in symmetry video.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="http://i.imgur.com/VdD760u.png"><img alt="Can T See The Timeline Docker In Animation Mode Version 3 Kde Community Forums In this tutorial, i introduce you to the animation tools in krita and explain all the functions, such as onion skin, and audio import. kde forums" src="http://i.imgur.com/VdD760u.png" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/oJ_JsdfpDxUVR2ix8xph-QAK-qthYSQT-N2koUq_tri7ByYPt8FXH6LRl8aGkPWMGWlisdWe';"></a>
+		
+		<p style="text-align: center;"><b>700x574 - Animation supports was one of the 2 main goals of the 2015 kickstarter campaign. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 700x574</li> 
+    <mark>Can T See The Timeline Docker In Animation Mode Version 3 Kde Community Forums </mark> Welcome to our krita tutorials.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://lh6.googleusercontent.com/proxy/CoPw2yr3YIBtmsSwpqlhHduB2GBc7_PskBumqWm7gErv56VpPzXek2rQOyn6ZxC6WjiTBZD71E9h4Vn4knKJkm3LHMSdwKNu=w1200-h630-pd"><img alt="18 Idea Drawing Anime In Krita Draw tiling patterns with the wrap around mode video. 18 idea drawing anime in krita" src="https://lh6.googleusercontent.com/proxy/CoPw2yr3YIBtmsSwpqlhHduB2GBc7_PskBumqWm7gErv56VpPzXek2rQOyn6ZxC6WjiTBZD71E9h4Vn4knKJkm3LHMSdwKNu=w1200-h630-pd" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS54bfO_qv9tVPvx1AavSj1o9Pu4_cywD47Wg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1200x630 - Krita basics by phil waclawski. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1200x630</li> 
+    <mark>18 Idea Drawing Anime In Krita </mark> Krita is not a dedicated animation application.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://opensource.com/sites/default/files/next.png"><img alt="How To Use Krita For Animation Opensource Com How to use the animation tools. how to use krita for animation" src="https://opensource.com/sites/default/files/next.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYxzCe3iV97xgdm8iPKYOAkGvoRW2_9zrHQw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>520x509 - Welcome to our krita tutorials. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 520x509</li> 
+    <mark>How To Use Krita For Animation Opensource Com </mark> In this tutorial, i introduce you to the animation tools in krita and explain all the functions, such as onion skin, and audio import.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.pinimg.com/originals/5e/08/e4/5e08e4c67791df219a3a04c21efac7b0.jpg"><img alt="How To Animate In Krita Free 2d Animation Software Krita Tutorial Ca In 2020 Krita Tutorial Animation Tutorial 2d Animation Software Krita free painting app tutorial. pinterest" src="https://i.pinimg.com/originals/5e/08/e4/5e08e4c67791df219a3a04c21efac7b0.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa0e9btA3QjrD9UP_yoQZhJobt3y6oAj_gUw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - In this krita animation tutorial for beginners, we will learn how to download krita, how to draw in it, how to animate. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>How To Animate In Krita Free 2d Animation Software Krita Tutorial Ca In 2020 Krita Tutorial Animation Tutorial 2d Animation Software </mark> Krita tutorials and how to use them.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/pj7XS67Talo/maxresdefault.jpg"><img alt="Krita Tutorial Export Animation Into Video Youtube How to animate on flipaclip tutorial for beginners (free!) krita is a free animation maker that is also great for replacing photoshop or gimp for painting speedpaints or backgrounds! krita tutorial export animation into video" src="https://i.ytimg.com/vi/pj7XS67Talo/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS3su16Z6MH7j7nmWgMsj3uqI-lf4tU_K-pA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - Krita is one of the best free painting programs available and includes a great variety of tools and features. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>Krita Tutorial Export Animation Into Video Youtube </mark> How to make animated videos with krita.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://docs.krita.org/en/_images/Animation_import_sprites.png"><img alt="Animation With Krita Krita Manual 4 4 0 Documentation Krita tutorials and how to use them. animation with krita krita manual 4" src="https://docs.krita.org/en/_images/Animation_import_sprites.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnanmZStehnpsUzs3WFEDeDC7k_EwcEIN_pg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1537x876 - In this tutorial, i introduce you to the animation tools in krita and explain all the functions, such as onion skin, and audio import. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1537x876</li> 
+    <mark>Animation With Krita Krita Manual 4 4 0 Documentation </mark> How to download and animate on the free program krita!
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://cdn.conceptartempire.com/images/02/4508/01-krita-setup-wacom-tablet.jpg"><img alt="20 Free Krita Tutorials The Ultimate List For Digital Artists Animators The youtuber in this video shows a very easy animation, which is honestly not all that hard to replicate. 20 free krita tutorials the ultimate" src="https://cdn.conceptartempire.com/images/02/4508/01-krita-setup-wacom-tablet.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuif9sCVrPiYpxyCs3MJXd6zI1QZHSXXt9ow&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>750x422 - Learn the new animation tools in this krita tutorial! </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 750x422</li> 
+    <mark>20 Free Krita Tutorials The Ultimate List For Digital Artists Animators </mark> Want to make your own cartoons?
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://cdn.homesthetics.net/wp-content/uploads/2019/08/Free-Krita-Tutorials.jpg"><img alt="17 Free Krita Tutorials Of 2021 How To Use Them It&#039;s a paint application that happens to do some animation. 17 free krita tutorials of 2021 how to" src="https://cdn.homesthetics.net/wp-content/uploads/2019/08/Free-Krita-Tutorials.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGPSiXjkszSVa8xx-fmoDhj_wvGencFlYmUA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1600x901 - In the left corner, there is a thing that has animation settings. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1600x901</li> 
+    <mark>17 Free Krita Tutorials Of 2021 How To Use Them </mark> In this tutorial, i introduce you to the animation tools in krita and explain all the functions, such as onion skin, and audio import.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://cdn.conceptartempire.com/images/02/4508/10-krita-blending-modes-video.jpg"><img alt="20 Free Krita Tutorials The Ultimate List For Digital Artists Animators How to animate on flipaclip tutorial for beginners (free!) krita is a free animation maker that is also great for replacing photoshop or gimp for painting speedpaints or backgrounds! 20 free krita tutorials the ultimate" src="https://cdn.conceptartempire.com/images/02/4508/10-krita-blending-modes-video.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRolDmJfwMTcJXXFvlcJ3DhPS6BeAEKxmdavg&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>750x422 - Want to make your own cartoons? </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 750x422</li> 
+    <mark>20 Free Krita Tutorials The Ultimate List For Digital Artists Animators </mark> Animation isn&#039;t easy, but the good to be clear:
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/0TSeBUHvhiw/maxresdefault.jpg"><img alt="Krita Animation Tutorial Overview Of The Traditional Animation Process Youtube In this tutorial, i introduce you to the animation tools in krita and explain all the functions, such as onion skin, and audio import. krita animation tutorial overview of the traditional animation process" src="https://i.ytimg.com/vi/0TSeBUHvhiw/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwDDqTN1Add2fpvzp7AoDbzCWCR06qPpKaiw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - Krita #animation #anime #hitfilm hello there! </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>Krita Animation Tutorial Overview Of The Traditional Animation Process Youtube </mark> I came from using adobe flash in my animation class, but i don&#039;t really understand how krita&#039;s software works.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://blog.cinnamonteal.in/wp-content/uploads/2018/08/animation_FiNAL0004-0396.gif"><img alt="Tutorial Illustration Using Mouse In Krita Far From The Madding Crowd Animation supports was one of the 2 main goals of the 2015 kickstarter campaign. illustration using mouse in krita" src="https://blog.cinnamonteal.in/wp-content/uploads/2018/08/animation_FiNAL0004-0396.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT20IBfi63ub4z3AOTrfOl1Wm7dYtFHe309wA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>640x480 - In the left corner, there is a thing that has animation settings. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 640x480</li> 
+    <mark>Tutorial Illustration Using Mouse In Krita Far From The Madding Crowd </mark> I would like to start making 2d animations.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/iopZ8iLfZ00/maxresdefault.jpg"><img alt="Krita Animation Tutorial Part 5 Adding Audio Youtube I know that i have a long way to go and that it&#039;s a lot of work, but i&#039;m more. krita animation tutorial part 5 adding audio" src="https://i.ytimg.com/vi/iopZ8iLfZ00/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp3HjSztIPU-HlB1j26I-8TSVBL7Q0Td0o2w&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - In the left corner, there is a thing that has animation settings. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>Krita Animation Tutorial Part 5 Adding Audio Youtube </mark> Mediaget.com/krita drawing and animation tutorial.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.ytimg.com/vi/nhHzKKf_3hU/maxresdefault.jpg"><img alt="Intro Animation Finished In Krita Tutorial Emily So How to paint in symmetry video. emily so" src="https://i.ytimg.com/vi/nhHzKKf_3hU/maxresdefault.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpfVPBgkDfdVwuyCbMcn6rgTkT0dY0rMmqcQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x720 - Krita free painting app tutorial. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x720</li> 
+    <mark>Intro Animation Finished In Krita Tutorial Emily So </mark> Krita is one of the best free painting programs available and includes a great variety of tools and features.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://www.davidrevoy.com/data/images/blog/2013/09/gettingstarted2/tutorial-getting-started-krita_part2_04.jpg"><img alt="Getting Started With Krita 2 3 David Revoy How to use the animation tools. getting started with krita 2 3" src="https://www.davidrevoy.com/data/images/blog/2013/09/gettingstarted2/tutorial-getting-started-krita_part2_04.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo5Inj0VVQMOifwBzv-0VkcVeRBzifB4AmGA&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1280x699 - Draw tiling patterns with the wrap around mode video. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1280x699</li> 
+    <mark>Getting Started With Krita 2 3 David Revoy </mark> The youtuber in this video shows a very easy animation, which is honestly not all that hard to replicate.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/693ae207-cc8a-4965-a657-d8d0c0e02d11/de0s74i-ed6b3829-caa5-40c4-a5df-d8ea874740ca.jpg/v1/fill/w_1192,h_670,q_70,strp/how_to_animate_in_krita__tutorial__tools_and_panel_by_cristoeuf_de0s74i-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03MjAiLCJwYXRoIjoiXC9mXC82OTNhZTIwNy1jYzhhLTQ5NjUtYTY1Ny1kOGQwYzBlMDJkMTFcL2RlMHM3NGktZWQ2YjM4MjktY2FhNS00MGM0LWE1ZGYtZDhlYTg3NDc0MGNhLmpwZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.tLvE1cYvT_swjZf6ODfR23SKSnr-qwsRg62NzfMZNDo"><img alt="How To Animate In Krita Tutorial Tools And Panel By Cristoeuf On Deviantart Want to make your own cartoons? deviantart" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/693ae207-cc8a-4965-a657-d8d0c0e02d11/de0s74i-ed6b3829-caa5-40c4-a5df-d8ea874740ca.jpg/v1/fill/w_1192,h_670,q_70,strp/how_to_animate_in_krita__tutorial__tools_and_panel_by_cristoeuf_de0s74i-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03MjAiLCJwYXRoIjoiXC9mXC82OTNhZTIwNy1jYzhhLTQ5NjUtYTY1Ny1kOGQwYzBlMDJkMTFcL2RlMHM3NGktZWQ2YjM4MjktY2FhNS00MGM0LWE1ZGYtZDhlYTg3NDc0MGNhLmpwZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.tLvE1cYvT_swjZf6ODfR23SKSnr-qwsRg62NzfMZNDo" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShBRUUbcSEs_L7QStpze8UuaML9TmA7iGCuw&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1192x670 - Krita tutorials and how to use them. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1192x670</li> 
+    <mark>How To Animate In Krita Tutorial Tools And Panel By Cristoeuf On Deviantart </mark> Draw tiling patterns with the wrap around mode video.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://krita.org/wp-content/uploads/2016/05/temmiechang_krita_02.gif"><img alt="Krita 3 0 The Animation Release Krita Big thanks to claus for converting all these to a wiki format as well. krita 3 0 the animation release krita" src="https://krita.org/wp-content/uploads/2016/05/temmiechang_krita_02.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPD4hvEKTHjbzcu9ET4Xc72zsS4dY3EBtnjQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>750x750 - Krita is a free and open source digital. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 750x750</li> 
+    <mark>Krita 3 0 The Animation Release Krita </mark> I know that i have a long way to go and that it&#039;s a lot of work, but i&#039;m more.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://i.pinimg.com/736x/4c/77/16/4c77163994205ec45b2f7d06dbb7bd4a.jpg"><img alt="Krita Animacia Angl Krita Krita Tutorial 2d Animation Software In this krita animation tutorial for beginners, we will learn how to download krita, how to draw in it, how to animate. krita tutorial 2d animation software" src="https://i.pinimg.com/736x/4c/77/16/4c77163994205ec45b2f7d06dbb7bd4a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW81qrms5kaxon2WQ5sY5mftBzLzHY9K8USQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>594x458 - How to make animated videos with krita. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 594x458</li> 
+    <mark>Krita Animacia Angl Krita Krita Tutorial 2d Animation Software </mark> It&#039;s a paint application that happens to do some animation.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="http://i.imgur.com/0KDplPT.png"><img alt="Can T See The Timeline Docker In Animation Mode Version 3 Kde Community Forums There&#039;s still a lot of elements missing from it, like tweening. kde forums" src="http://i.imgur.com/0KDplPT.png" width="100%" onerror="this.onerror=null;this.src='https://lh3.googleusercontent.com/proxy/o3SeBTlADI1HEh_VgWgfuhz3Lpky4_BLor0HwxFR-Mn8ebziQ4Rzxi01XwJsSFoht9Ud8s8o';"></a>
+		
+		<p style="text-align: center;"><b>700x417 - Learn the basics of the digital art software. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 700x417</li> 
+    <mark>Can T See The Timeline Docker In Animation Mode Version 3 Kde Community Forums </mark> In this tutorial, i introduce you to the animation tools in krita and explain all the functions, such as onion skin, and audio import.
+</blockquote>
+    </aside>
+    <aside>
+        <a href="https://cdn.mos.cms.futurecdn.net/5RLVrYSjWFrMExLwbCjDRK.jpg"><img alt="Krita Tutorials Learn The Basics Of The Digital Art Software Creative Bloq Krita lets you animate them for free!! krita tutorials learn the basics of" src="https://cdn.mos.cms.futurecdn.net/5RLVrYSjWFrMExLwbCjDRK.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3A1CdEyueyQio81pp-tgiD-E_LN5jY2FLwQ&amp;usqp=CAU';"></a>
+		
+		<p style="text-align: center;"><b>1660x948 - How to use the animation tools. </b></p>
+   <div align="center">
+
+
+  <blockquote class="tr_bq">
+<li>Original Resolution: 1660x948</li> 
+    <mark>Krita Tutorials Learn The Basics Of The Digital Art Software Creative Bloq </mark> These krita tutorials will help you get started with the free painting.
+</blockquote>
+    </aside>
+</section>
+
+
+	<section>
+ 
+</section>
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+    
+</article>
+
+     
+        
+    
+
+    <footer class="site-footer">
+
+<script>
+if (!document.cookie || document.cookie.indexOf('AVPWCAP=') == -1) {
+_avp.push({ alias: '/', type: 'window', zid: 35, pid: 9319 });
+}
+</script>
+
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Pngb Ball
+    </section>
+    
+    <section class="powerby">
+        </section>
+		 
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4309929,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4309929&101" alt="counter stats" border="0"></a></noscript>
+
+	
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css">
+
+            </main>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"
+    integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin="anonymous"></script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
